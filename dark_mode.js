@@ -10,8 +10,6 @@
     // noticeButton, documentButton, qnaButton, toktokButton
     const sButtonColors = [ "#008900", "#684df6", "#c9a876", "#4881f6" ]
 
-    //document.body.style.color = "white";
-
     var noticeButtonStyle;
     var documentButtonStyle;
     var qnaButtonStyle;
@@ -20,8 +18,16 @@
     // !!!! this variable is universal for all for loops. should keep an eye on this.
     var i;
 
+    // make all default font color white. It was black before changing.
+    //document.body.style.color = "white";
+
     document.getElementsByClassName("bg-light")[0].style.cssText = "background-color: " + darkModeBlack + " !important";
     document.getElementsByClassName("bg-top")[0].style.cssText = "background-color: " + darkModeKw + " !important";
+    
+    var cards = document.getElementsByClassName("card");
+    for(i = 0; i < cards.length; ++i) {
+        cards[i].style.backgroundColor = "#505050";
+    }
     
 
 
