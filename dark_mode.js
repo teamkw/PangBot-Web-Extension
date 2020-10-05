@@ -24,9 +24,12 @@
     document.getElementsByClassName("bg-light")[0].style.cssText = "background-color: " + darkModeBlack + " !important";
     document.getElementsByClassName("bg-top")[0].style.cssText = "background-color: " + darkModeKw + " !important";
     
+    // -------------------------- CARDS -------------------------------
+    // ----------------------------------------------------------------
     var cards = document.getElementsByClassName("card");
     for(i = 0; i < cards.length; ++i) {
-        cards[i].style.backgroundColor = "#505050";
+        //cards[i].style.backgroundColor = "#505050";
+        cards[i].style.backgroundColor = "#272822";
     }
     
     // ---------------------- SUBJECT TABLE ---------------------------
