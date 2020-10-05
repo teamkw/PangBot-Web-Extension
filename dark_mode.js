@@ -8,6 +8,9 @@
     //document.body.style.color = "white";
 
     var noticeButtonStyle;
+    var documentButtonStyle;
+    var qnaButtonStyle;
+    var toktokButtonStyle;
 
     var i;
     var noticeButtons = document.querySelectorAll('.btn-lightgreen');
@@ -16,7 +19,7 @@
         noticeButtonStyle = "background-color: " + darkModeLightGreen + "; ";
         curButton.style.cssText = noticeButtonStyle;
         if(curButton.lastElementChild.style.display !== "none") {
-            curButton.removeChild(curButton.lastElementChild);
+            //curButton.removeChild(curButton.lastElementChild);
             noticeButtonStyle += "border-color: " + darkModeKw + "; ";
             noticeButtonStyle += "border-width: thick; ";
             curButton.style.cssText = noticeButtonStyle;
@@ -25,17 +28,38 @@
     var documentButtons = document.querySelectorAll('.btn-lightpurple');
     for (i = 0; i < documentButtons.length; ++i) {
         var curButton = documentButtons[i];
-        curButton.style.cssText = "background-color: " + darkModeLightPurple + "; ";
+        documentButtonStyle = "background-color: " + darkModeLightPurple + "; ";
+        curButton.style.cssText = documentButtonStyle;
+        if(curButton.lastElementChild.style.display !== "none") {
+            //curButton.removeChild(curButton.lastElementChild);
+            documentButtonStyle += "border-color: " + darkModeKw + "; ";
+            documentButtonStyle += "border-width: thick; ";
+            curButton.style.cssText = documentButtonStyle;
+        }
     }
     var qnaButtons = document.querySelectorAll('.btn-lightbrown');
     for (i = 0; i < qnaButtons.length; ++i) {
         var curButton = qnaButtons[i];
-        curButton.style.cssText = "background-color: " + darkModeLightBrown + "; ";
+        qnaButtonStyle = "background-color: " + darkModeLightBrown + "; ";
+        curButton.style.cssText = qnaButtonStyle;
+        if(curButton.lastElementChild.style.display !== "none") {
+            //curButton.removeChild(curButton.lastElementChild);
+            qnaButtonStyle += "border-color: " + darkModeKw + "; ";
+            qnaButtonStyle += "border-width: thick; ";
+            curButton.style.cssText = qnaButtonStyle;
+        }
     }
     var toktokButtons = document.querySelectorAll('.btn-lightblue');
     for (i = 0; i < toktokButtons.length; ++i) {
         var curButton = toktokButtons[i];
-        curButton.style.cssText = "background-color: " + darkModeLightBlue + "; "; 
+        toktokButtonStyle = "background-color: " + darkModeLightBlue + "; ";
+        curButton.style.cssText = toktokButtonStyle;
+        if(curButton.lastElementChild.style.display !== "none") {
+            //curButton.removeChild(curButton.lastElementChild);
+            toktokButtonStyle += "border-color: " + darkModeKw + "; ";
+            toktokButtonStyle += "border-width: thick; ";
+            curButton.style.cssText = toktokButtonStyle;
+        }
     }
     document.getElementsByClassName("bg-light")[0].style.cssText = "background-color: " + darkModeBlack + " !important";
     document.getElementsByClassName("bg-top")[0].style.cssText = "background-color: " + darkModeKw + " !important";
