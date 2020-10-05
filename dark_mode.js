@@ -1,4 +1,5 @@
 (function() {
+    document.body.style.color = "white";
     var i;
     var noticeButtons = document.querySelectorAll('.btn-lightgreen');
     for (i = 0; i < noticeButtons.length; ++i) { noticeButtons[i].style.cssText = 'background-color: red;'; }
