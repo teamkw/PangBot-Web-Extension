@@ -18,8 +18,8 @@
     // !!!! this variable is universal for all for loops. should keep an eye on this.
     var i;
 
-    // make all default font color white. It was black before changing.
-    //document.body.style.color = "white";
+    // change all default font color. It was black before changing.
+    document.body.style.color = "white";
 
     document.getElementsByClassName("bg-light")[0].style.cssText = "background-color: " + darkModeBlack + " !important";
     document.getElementsByClassName("bg-top")[0].style.cssText = "background-color: " + darkModeKw + " !important";
@@ -29,7 +29,14 @@
         cards[i].style.backgroundColor = "#505050";
     }
     
-
+    // ---------------------- SUBJECT TABLE ---------------------------
+    // ----------------------------------------------------------------
+    var listboxes = document.querySelectorAll('.subjectlist li');
+    for(i = 0; i < listboxes.length; ++i) {
+        // change subject table border color
+        listboxes[i].style.borderBottomColor = darkModeKw;
+        listboxes[i].style.borderTopColor = darkModeKw;
+    }
 
     // ----------------------- SMALL BUTTONS --------------------------
     // ----------------------------------------------------------------
