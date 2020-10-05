@@ -6,26 +6,36 @@
     const darkModeLightBrown = "#c9a876"
     const darkModeLightBlue = "#4881f6";
     //document.body.style.color = "white";
+
+    var noticeButtonStyle;
+
     var i;
     var noticeButtons = document.querySelectorAll('.btn-lightgreen');
     for (i = 0; i < noticeButtons.length; ++i) {
         var curButton = noticeButtons[i];
-        curButton.style.cssText = "background-color: " + darkModeLightGreen + ";"; 
+        noticeButtonStyle = "background-color: " + darkModeLightGreen + "; ";
+        curButton.style.cssText = noticeButtonStyle;
+        if(curButton.lastElementChild.style.display !== "none") {
+            curButton.removeChild(curButton.lastElementChild);
+            noticeButtonStyle += "border-color: " + darkModeKw + "; ";
+            noticeButtonStyle += "border-width: thick; ";
+            curButton.style.cssText = noticeButtonStyle;
+        }
     }
     var documentButtons = document.querySelectorAll('.btn-lightpurple');
     for (i = 0; i < documentButtons.length; ++i) {
         var curButton = documentButtons[i];
-        curButton.style.cssText = "background-color: " + darkModeLightPurple + ";";
+        curButton.style.cssText = "background-color: " + darkModeLightPurple + "; ";
     }
     var qnaButtons = document.querySelectorAll('.btn-lightbrown');
     for (i = 0; i < qnaButtons.length; ++i) {
         var curButton = qnaButtons[i];
-        curButton.style.cssText = "background-color: " + darkModeLightBrown + ";";
+        curButton.style.cssText = "background-color: " + darkModeLightBrown + "; ";
     }
     var toktokButtons = document.querySelectorAll('.btn-lightblue');
     for (i = 0; i < toktokButtons.length; ++i) {
         var curButton = toktokButtons[i];
-        curButton.style.cssText = "background-color: " + darkModeLightBlue + ";"; 
+        curButton.style.cssText = "background-color: " + darkModeLightBlue + "; "; 
     }
     document.getElementsByClassName("bg-light")[0].style.cssText = "background-color: " + darkModeBlack + " !important";
     document.getElementsByClassName("bg-top")[0].style.cssText = "background-color: " + darkModeKw + " !important";
