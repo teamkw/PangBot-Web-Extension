@@ -16,6 +16,6 @@ changeColor.onclick = function(element) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
         tabs[0].id,
-        {code: 'document.body.style.backgroundColor = "' + color + '";'});
+        {code: 'document.getElementsByClassName("bg-light")[0].style.cssText = "background-color: ' + color + ' !important";'});
   });
 };
