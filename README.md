@@ -1,4 +1,7 @@
 # PangBot-Web-Extension
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 광운대학교 KLAS 웹사이트에 각종 기능을 더해주는 크롬 익스텐션입니다.
 
@@ -18,3 +21,22 @@
 
 ## 기여하기
 PangBot Extension은 여러분의 기여를 언제나 환영합니다! [CONTRIBUTING.md](https://github.com/teamkw/PangBot-Web-Extension/blob/master/CONTRIBUTING.md)를 확인해주세요.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/pkeugine"><img src="https://avatars0.githubusercontent.com/u/48251668?v=4" width="100px;" alt=""/><br /><sub><b>Eugine Park</b></sub></a><br /><a href="https://github.com/teamkw/PangBot-Web-Extension/commits?author=pkeugine" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
