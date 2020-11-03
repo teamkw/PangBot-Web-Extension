@@ -1,6 +1,6 @@
 # PangBot-Web-Extension
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 광운대학교 KLAS 웹사이트에 각종 기능을 더해주는 크롬 익스텐션입니다.
@@ -32,6 +32,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/pkeugine"><img src="https://avatars0.githubusercontent.com/u/48251668?v=4" width="100px;" alt=""/><br /><sub><b>Eugine Park</b></sub></a><br /><a href="https://github.com/teamkw/PangBot-Web-Extension/commits?author=pkeugine" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/ooketmon"><img src="https://avatars1.githubusercontent.com/u/49191920?v=4" width="100px;" alt=""/><br /><sub><b>Irene Lee </b></sub></a><br /><a href="#ideas-ooketmon" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
