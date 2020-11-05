@@ -1,6 +1,8 @@
 (function() {
     const darkModeBlack = "#1e1f1c";
     const darkModeKw = "#b5335d";
+    const darkModethead = '#999999'
+    const darkModetbody = '#333333'
 
     const darkModeLightGreen = "#008900";
     const darkModeLightPurple = "#684df6";
@@ -92,4 +94,19 @@
         }
     }
     
+
+    // -------------------------- NOTICE ------------------------------
+    // ----------------------------------------------------------------
+
+    // -------------------------- Title -------------------------------
+    var contenttitle = document.getElementsByClassName("contenttitle");
+    for(i = 0; i < contenttitle.length; ++i) {
+        contenttitle[i].style.color = 'white';
+    }
+
+    // -------------------------- SEARCH ------------------------------
+    var search = document.getElementsByClassName("con_search");
+    for(i = 0; i < search.length; ++i) {
+        search[i].style.backgroundColor = "#272822";
+    }
 })();
