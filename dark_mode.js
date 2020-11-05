@@ -109,4 +109,16 @@
     for(i = 0; i < search.length; ++i) {
         search[i].style.backgroundColor = "#272822";
     }
+
+    // -------------------------- TABLE ------------------------------ 
+    var tableBody = document.querySelectorAll('.AType tbody tr td');
+    for (i = 0; i < tableBody.length; ++i) {
+        tableBody[i].style.background = darkModetbody;
+    }
+
+    var tableHead = document.querySelectorAll('.AType thead tr th');
+    for (i = 0; i < tableHead.length; ++i) {
+        tableHead[i].style.background = darkModethead;
+
+    }
 })();
