@@ -1,6 +1,8 @@
 (function() {
     const darkModeBlack = "#1e1f1c";
     const darkModeKw = "#b5335d";
+    const darkModethead = '#999999'
+    const darkModetbody = '#333333'
 
     const darkModeLightGreen = "#008900";
     const darkModeLightPurple = "#684df6";
@@ -91,5 +93,46 @@
             curButton.style.cssText = toktokButtonStyle;
         }
     }
+    
+
+    // -------------------------- NOTICE ------------------------------
+    // ----------------------------------------------------------------
+
+    // -------------------------- Title -------------------------------
+    var contenttitle = document.getElementsByClassName("contenttitle");
+    for(i = 0; i < contenttitle.length; ++i) {
+        contenttitle[i].style.color = 'white';
+    }
+
+    // -------------------------- SEARCH ------------------------------
+    var search = document.getElementsByClassName("con_search");
+    for(i = 0; i < search.length; ++i) {
+        search[i].style.backgroundColor = "#272822";
+    }
+
+    // -------------------------- TABLE ------------------------------ 
+    var tableBody = document.querySelectorAll('.AType tbody tr td');
+    for (i = 0; i < tableBody.length; ++i) {
+        tableBody[i].style.background = darkModetbody;
+    }
+
+    var tableHead = document.querySelectorAll('.AType thead tr th');
+    for (i = 0; i < tableHead.length; ++i) {
+        tableHead[i].style.background = darkModethead;
+
+    }
+
+    // -------------------------- PAGING -----------------------------
+    var paging = document.querySelectorAll('.paging li');
+    for (i = 0; i < paging.length; ++i) {
+        var cur = paging[i].getElementsByTagName('a')[0];
+        if (paging[i].className == 'active'){
+            cur.style.color = '#000000';
+        }else {
+            cur.style.color = 'white';
+        }
+    }
+
+
     
 })();
