@@ -121,4 +121,18 @@
         tableHead[i].style.background = darkModethead;
 
     }
+
+    // -------------------------- PAGING -----------------------------
+    var paging = document.querySelectorAll('.paging li');
+    for (i = 0; i < paging.length; ++i) {
+        var cur = paging[i].getElementsByTagName('a')[0];
+        if (paging[i].className == 'active'){
+            cur.style.color = '#000000';
+        }else {
+            cur.style.color = 'white';
+        }
+    }
+
+
+    
 })();
