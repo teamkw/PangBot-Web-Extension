@@ -10,7 +10,9 @@
 ### KLAS 다크모드
 | 변경 전 | 변경후 |
 |---|---|
-| ![before dark mode](https://github.com/teamkw/PangBot-Web-Extension/blob/main/images/beforeDarkMode.png) | ![after dark mode](https://github.com/teamkw/PangBot-Web-Extension/blob/main/images/afterDarkMode.png) |
+| ![main page before dark mode](https://github.com/teamkw/PangBot-Web-Extension/blob/main/images/beforeDarkMode.png) | ![main page after dark mode](https://github.com/teamkw/PangBot-Web-Extension/blob/main/images/afterDarkMode.png) |
+| ![notice page before dark mode](https://github.com/teamkw/PangBot-Web-Extension/blob/main/images/whiteNotice.png) | ![notice page after dark mode](https://github.com/teamkw/PangBot-Web-Extension/blob/main/images/darkNotice.png) |
+
 ### KLAS 메인 페이지 UI 변경
 * 유용한 버튼 추가 (e.g. 온라인 강의 버튼, 과제제출 버튼)
 * 새로운 강의 또는 공지사항에 대한 알림 더 명확히 표시
