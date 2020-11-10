@@ -1,5 +1,6 @@
 (function() {
     const darkModeBlack = "#1e1f1c";
+    const darkModeLightBlack = "#272822";
     const darkModeKw = "#b5335d";
     const darkModethead = '#999999'
     const darkModetbody = '#333333'
@@ -107,7 +108,7 @@
     // -------------------------- SEARCH ------------------------------
     var search = document.getElementsByClassName("con_search");
     for(i = 0; i < search.length; ++i) {
-        search[i].style.backgroundColor = "#272822";
+        search[i].style.backgroundColor = darkModeLightBlack;
     }
 
     // -------------------------- TABLE ------------------------------ 
@@ -138,7 +139,9 @@
 
     // ------------------------ BOTTOM TEXT ---------------------------
     var text = document.querySelectorAll('.popWindow div');
-    text[text.length - 1].style.color = darkModeLightBlue;
+    if(text.length > 0){
+        text[text.length - 1].style.color = darkModeLightBlue;
+    }
 
     // ---------------------- DATE TEXT (BLUE) ------------------------
     var dateText = document.querySelectorAll(".AType tbody tr td font");
@@ -149,4 +152,59 @@
         }
     }
 
+    // ------------------------ ASSIGMENT PAGE -------------------------
+
+    //----------------------------- TABLE ------------------------------
+    var table = document.getElementsByClassName('contsubtitle icon');
+    for(i = 0; i < table.length; i++){
+        table[i].style.backgroundColor = darkModeLightBlack;
+    }
+
+    table = document.querySelectorAll('.tablegw tbody tr');
+    for(i = 0; i < table.length; i++){
+        var th = table[i].getElementsByTagName('th');
+        var td = table[i].getElementsByTagName('td');
+        if(th.length > 0){
+            th[0].style.backgroundColor = darkModethead;
+        }
+        if(td.length > 0){
+            td[0].style.backgroundColor = darkModetbody;
+        }
+    }
+
+    var fileherf = document.querySelectorAll('.board_viewfile a')
+    for(i = 0; i < fileherf.length; i++){
+        fileherf[i].style.color = "white"
+    }
+
+    
+    // ------------------------ CLASS MATERIALS ------------------------
+    var info = document.getElementsByClassName('board_view_header')[0];
+    info.style.background = darkModethead;
+
+    var file  = document.getElementsByClassName('board_viewfile');
+    for(i = 0; i < file.length; i++){
+        var cur = file[i];
+        cur.style.backgroundColor = darkModeLightBlack;
+        var span = cur.getElementsByTagName('span');
+        span[0].style.color = 'white';
+        span[1].style.color = darkModeLightBlue;
+        cur.getElementsByTagName('a')[0].style.color = 'white';
+    }
+
+    var textherf = document.querySelectorAll('.board_viewDetail div p a');
+    for(i = 0; i < textherf.length; i++){
+        textherf[i].style.color = "white"
+    }
+
+    var comment = document.getElementsByClassName('text first');
+    for(i = 0; i < comment.length; i++){ 
+        var cur = comment[i].getElementsByTagName('pre');
+
+        if (cur.length > 0){
+            cur[0].style.backgroundColor = darkModeLightBlack;
+            cur[0].style.color = 'white';
+        }
+    }
+    
 })();
