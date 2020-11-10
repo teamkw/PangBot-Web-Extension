@@ -133,6 +133,20 @@
         }
     }
 
+    // --------------------- ASSIGMENT MAIN PAGE-----------------------
+    // ----------------------------------------------------------------
 
-    
+    // ------------------------ BOTTOM TEXT ---------------------------
+    var text = document.querySelectorAll('.popWindow div');
+    text[text.length - 1].style.color = darkModeLightBlue;
+
+    // ---------------------- DATE TEXT (BLUE) ------------------------
+    var dateText = document.querySelectorAll(".AType tbody tr td font");
+    for(i = 0; i < dateText.length; i++){
+        var cur = dateText[i];
+        if(cur.getAttribute('color') == 'blue'){
+            cur.style.color = darkModeLightBlue;
+        }
+    }
+
 })();
