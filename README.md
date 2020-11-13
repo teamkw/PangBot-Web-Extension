@@ -22,7 +22,7 @@
 ### 강의조회와 온라인 수업 들을 때의 팝업 / 인증코드 제거 등 각종 편의사항
 
 ## 기여하기
-PangBot Extension은 여러분의 기여를 언제나 환영합니다! [CONTRIBUTING.md](https://github.com/teamkw/PangBot-Web-Extension/blob/master/CONTRIBUTING.md)를 확인해주세요.
+PangBot Extension은 여러분의 기여를 언제나 환영합니다! [CONTRIBUTING.md](https://github.com/teamkw/PangBot-Web-Extension/blob/main/CONTRIBUTING.md)를 확인해주세요.
 
 ## Contributors ✨
 
