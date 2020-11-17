@@ -51,7 +51,7 @@
         var curButton = noticeButtons[i];
         noticeButtonStyle = "background-color: " + darkModeLightGreen + "; ";
         curButton.style.cssText = noticeButtonStyle;
-        if(curButton.lastElementChild.style.display !== "none") {
+        if(curButton.lastElementChild && curButton.lastElementChild.style.display !== "none") {
             //curButton.removeChild(curButton.lastElementChild);
             noticeButtonStyle += "border-color: " + darkModeKw + "; ";
             noticeButtonStyle += "border-width: thick; ";
@@ -94,7 +94,25 @@
             curButton.style.cssText = toktokButtonStyle;
         }
     }
-    
+
+    // ------------------------ TITLE TEXT ----------------------------
+    var title = document.getElementsByClassName('title-text');
+    for(i = 0; i < title.length; i++){
+        title[i].style.color = 'white';
+    }
+    // --------------------------- C DAY ------------------------------
+    var cTitle = document.getElementsByClassName('c-title');
+    if(cTitle.length > 0){
+        cTitle[0].style.color = 'white';
+    }
+    var day = document.querySelectorAll('.c-day-content');
+    for(i = 0; i < day.length; i++){
+        if(day[i].style.color !== 'rgb(255, 255, 255)'){
+           day[i].style.color = '#747474'
+        }
+    }
+
+
 
     // -------------------------- NOTICE ------------------------------
     // ----------------------------------------------------------------
@@ -160,15 +178,15 @@
         table[i].style.backgroundColor = darkModeLightBlack;
     }
 
-    table = document.querySelectorAll('.tablegw tbody tr');
-    for(i = 0; i < table.length; i++){
-        var th = table[i].getElementsByTagName('th');
-        var td = table[i].getElementsByTagName('td');
-        if(th.length > 0){
-            th[0].style.backgroundColor = darkModethead;
+    var tr = document.querySelectorAll('.tablegw tbody tr');
+    for(i = 0; i < tr.length; i++){
+        var th = tr[i].getElementsByTagName('th');
+        var td = tr[i].getElementsByTagName('td');
+        for(var j = 0; j < th.length; j++){
+            th[j].style.backgroundColor = darkModethead;
         }
-        if(td.length > 0){
-            td[0].style.backgroundColor = darkModetbody;
+        for(var j = 0; j < td.length; j++){
+            td[j].style.backgroundColor = darkModetbody;
         }
     }
 
@@ -179,8 +197,10 @@
 
     
     // ------------------------ CLASS MATERIALS ------------------------
-    var info = document.getElementsByClassName('board_view_header')[0];
-    info.style.background = darkModethead;
+    var info = document.getElementsByClassName('board_view_header');
+    if(info.length > 0){
+        info[0].style.background = darkModethead;
+    }
 
     var file  = document.getElementsByClassName('board_viewfile');
     for(i = 0; i < file.length; i++){
