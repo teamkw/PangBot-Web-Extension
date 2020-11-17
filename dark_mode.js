@@ -51,7 +51,7 @@
         var curButton = noticeButtons[i];
         noticeButtonStyle = "background-color: " + darkModeLightGreen + "; ";
         curButton.style.cssText = noticeButtonStyle;
-        if(curButton.lastElementChild.style.display !== "none") {
+        if(curButton.lastElementChild && curButton.lastElementChild.style.display !== "none") {
             //curButton.removeChild(curButton.lastElementChild);
             noticeButtonStyle += "border-color: " + darkModeKw + "; ";
             noticeButtonStyle += "border-width: thick; ";
@@ -94,7 +94,12 @@
             curButton.style.cssText = toktokButtonStyle;
         }
     }
-    
+
+    // ------------------------ TITLE TEXT ----------------------------
+    var title = document.getElementsByClassName('title-text');
+    for(i = 0; i < title.length; i++){
+        title[i].style.color = 'white';
+    }
 
     // -------------------------- NOTICE ------------------------------
     // ----------------------------------------------------------------
@@ -179,8 +184,10 @@
 
     
     // ------------------------ CLASS MATERIALS ------------------------
-    var info = document.getElementsByClassName('board_view_header')[0];
-    info.style.background = darkModethead;
+    var info = document.getElementsByClassName('board_view_header');
+    if(info.length > 0){
+        info[0].style.background = darkModethead;
+    }
 
     var file  = document.getElementsByClassName('board_viewfile');
     for(i = 0; i < file.length; i++){
