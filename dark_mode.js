@@ -100,6 +100,19 @@
     for(i = 0; i < title.length; i++){
         title[i].style.color = 'white';
     }
+    // --------------------------- C DAY ------------------------------
+    var cTitle = document.getElementsByClassName('c-title');
+    if(cTitle.length > 0){
+        cTitle[0].style.color = 'white';
+    }
+    var day = document.querySelectorAll('.c-day-content');
+    for(i = 0; i < day.length; i++){
+        if(day[i].style.color !== 'rgb(255, 255, 255)'){
+           day[i].style.color = '#747474'
+        }
+    }
+
+
 
     // -------------------------- NOTICE ------------------------------
     // ----------------------------------------------------------------
@@ -165,15 +178,15 @@
         table[i].style.backgroundColor = darkModeLightBlack;
     }
 
-    table = document.querySelectorAll('.tablegw tbody tr');
-    for(i = 0; i < table.length; i++){
-        var th = table[i].getElementsByTagName('th');
-        var td = table[i].getElementsByTagName('td');
-        if(th.length > 0){
-            th[0].style.backgroundColor = darkModethead;
+    var tr = document.querySelectorAll('.tablegw tbody tr');
+    for(i = 0; i < tr.length; i++){
+        var th = tr[i].getElementsByTagName('th');
+        var td = tr[i].getElementsByTagName('td');
+        for(var j = 0; j < th.length; j++){
+            th[j].style.backgroundColor = darkModethead;
         }
-        if(td.length > 0){
-            td[0].style.backgroundColor = darkModetbody;
+        for(var j = 0; j < td.length; j++){
+            td[j].style.backgroundColor = darkModetbody;
         }
     }
 
