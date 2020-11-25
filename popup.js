@@ -16,6 +16,7 @@ changeColor.onclick = function(element) {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
         tabs[0].id,
-        {file: "dark_mode.js"});
+        {file: "cookie.js"}, function() {
+          chrome.tabs.executeScript(tabs[0].id, { file: "dark_mode.js" })});
   });
 };

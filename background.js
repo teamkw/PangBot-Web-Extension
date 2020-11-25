@@ -30,3 +30,5 @@ chrome.webNavigation.onCompleted.addListener(
   },
   { url: [{ hostEquals: "klas.kw.ac.kr" }] }
 );
+
+

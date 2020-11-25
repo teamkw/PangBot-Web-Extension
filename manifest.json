@@ -11,7 +11,7 @@
     "https://*/*"],
   "options_page": "options.html",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background.js","cookie.js"],
     "persistent": false
   },
   "page_action": {
