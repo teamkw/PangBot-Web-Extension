@@ -18,3 +18,17 @@ chrome.runtime.onInstalled.addListener(function() {
     }]);
   });
 });
+
+chrome.webNavigation.onCompleted.addListener(
+  function () {
+    const res = chrome.tabs.query(
+      { active: true, currentWindow: true },
+      function (tabs) {
+        chrome.tabs.executeScript(tabs[0].id, { file: "dark_mode.js" });
+      }
+    );
+  },
+  { url: [{ hostEquals: "klas.kw.ac.kr" }] }
+);
+
+

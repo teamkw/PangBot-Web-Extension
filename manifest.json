@@ -2,10 +2,16 @@
   "name": "PangBot Web Extension",
   "version": "1.0",
   "description": "Some tweaks for KwangWoon University website",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "permissions": [
+    "activeTab", 
+    "declarativeContent", 
+    "storage", 
+    "webNavigation",
+    "http://*/*",
+    "https://*/*"],
   "options_page": "options.html",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background.js","cookie.js"],
     "persistent": false
   },
   "page_action": {
